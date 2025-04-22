@@ -1,7 +1,29 @@
+body {
+  font: 16px "Kanit", Arial, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 /* 
-    Put all the css styles you will be using across all your HTML files here.
-   For example -  css for the header and footer components, font styles etc.
+  Page specific styles can go in a separate stylesheet
 */
+nav ul {
+  /* remove disc from list elements */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: black;
+  padding: 1rem 0.5rem;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 1.5rem;
+}
+nav ul li a {
+  color: pink;
+  text-decoration: none;
+  font-weight: bold;
+}
 
 @media screen and (min-width: 768px) {
   /*Tablet-specific styles go here*/
@@ -9,4 +31,25 @@
 
 @media screen and (min-width: 1024px) {
   /*Desktop-specific styles go here*/
+}
+
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+.header {
+  background-color: #red;
+  color: white;
+  padding: 20 px;
+  text-align: center;
+  border-radius: 5 px;
+  transition: background-color 0/3 ease;
 }
